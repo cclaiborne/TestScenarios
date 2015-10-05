@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheets/menu_style.css">
+		<script src="javascripts/prototype.js" type="text/javascript"></script>
+		<script src="javascripts/scriptaculous.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row title">
+				<div class="col-xs-3" href="#" onclick="Effect.toggle('home_appear', 'blind'); return false;">Home</div>
+				<div class="col-xs-3" href="#" onclick="Effect.toggle('search_appear', 'blind'); return false;">Search</div>
+				<div class="col-xs-3" href="#" onclick="Effect.toggle('welcome_appear', 'blind'); return false;">Welcome</div>
+				<div class="col-xs-3" href="#" onclick="Effect.toggle('contact_appear', 'blind'); return false;">Contact</div>
+			</div>
+			<div class="row">
+				<div class = "outer col-xs-3" >
+					<div class = "inner" style= "display:none" id="home_appear">
+					</div>
+				</div>
+				<div class = "outer col-xs-3" class="col-xs-3">
+					<div class = "inner" style= "display:none" id="search_appear">
+						<div id = "one" onmouseover="changeColor(this.id)" onmouseleave="changeBack(this.id)" class = "menu_items">Search New</div>
+						<div id = "two" onmouseover="changeColor(this.id)" onmouseleave="changeBack(this.id)" class = "menu_items">Search Used</div>
+						<div id = "three" onmouseover="changeColor(this.id)" onmouseleave="changeBack(this.id)" class = "menu_items">Search Cars</div>
+						<div id = "four" onmouseover="changeColor(this.id)" onmouseleave="changeBack(this.id)" class = "menu_items">Search Trucks</div>
+						<div id = "five" onmouseover="changeColor(this.id)" onmouseleave="changeBack(this.id)" class = "menu_items">Search SUVs</div>
+						<div id = "six" onmouseover="changeColor(this.id)" onmouseleave="changeBack(this.id)" class = "menu_items">Request Quote</div>
+					</div>
+				</div>
+				<div class = "outer col-xs-3" class="col-xs-3">
+					<div class = "inner" style= "display:none" id="welcome_appear">
+						<div id = "7" onmouseover="changeColor(this.id)" onmouseleave="changeBack(this.id)" class = "menu_items">About Us</div>
+						<div id = "8" onmouseover="changeColor(this.id)" onmouseleave="changeBack(this.id)"class = "menu_items">Visit Us</div>
+					</div>
+				</div>
+				<div class = "outer col-xs-3"class="col-xs-3">
+					<div class = "inner" style= "display:none" id="contact_appear">
+					</div>
+				</div>
+
+			</div>
+			<script>
+				function changeColor(id) {
+					$(id).style.backgroundColor = '#545454';
+					$(id).style.color = 'white';
+
+				}
+
+				function changeBack(id) {
+					$(id).style.backgroundColor = '#ccc';
+					$(id).style.color = 'black';
+				}
+			</script>
+	</body>
+</html>
