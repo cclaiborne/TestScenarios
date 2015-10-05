@@ -1,0 +1,20 @@
+<html>
+	</head>
+	<head>
+	<body>
+		<div>
+		</div>
+		<script>
+		var array_one = ["apple", "dog", "cat", "food", "kite", "elephant", "lunch", "book", "laptop"];
+		var array_two=["dog", "goose", "kite", "meal", "laptop"];
+		var mySet = new Set();
+		array_one.forEach(function(entry) {
+			mySet.add(entry);
+		});
+		array_two.forEach(function(entry) {
+			if(mySet.has(entry))
+				console.log(entry);
+		});
+		</script>
+	</body>
+</html>
